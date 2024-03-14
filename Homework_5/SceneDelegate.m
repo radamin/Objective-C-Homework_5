@@ -6,6 +6,8 @@
 //
 
 #import "SceneDelegate.h"
+#import "GetViewController.h"
+#import "PostViewController.h"
 
 @interface SceneDelegate ()
 
@@ -15,9 +17,22 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+    
+    UIViewController *getViewController = [[GetViewController alloc] init];
+    UIViewController *postViewController = [[PostViewController alloc] init];
+    
+    UINavigationController *getNavigationController = [[UINavigationController alloc] initWithRootViewController:getViewController];
+    UINavigationController *postNavigationController = [[UINavigationController alloc] initWithRootViewController:postViewController];
+    getNavigationController.tabBarItem.title = @"GET";
+    postNavigationController.tabBarItem.title = @"POST";
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController setViewControllers:@[getNavigationController, postNavigationController]];
+    
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
 }
 
 

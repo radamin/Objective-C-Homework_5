@@ -14,11 +14,13 @@
 		066735852BA28428003BC22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066735842BA28428003BC22E /* Assets.xcassets */; };
 		066735882BA28428003BC22E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 066735872BA28428003BC22E /* Base */; };
 		0667358B2BA28428003BC22E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667358A2BA28428003BC22E /* main.m */; };
+		066735932BA28BCA003BC22E /* GetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066735922BA28BCA003BC22E /* GetViewController.m */; };
+		066735962BA28D43003BC22E /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 066735952BA28D43003BC22E /* Loader.m */; };
+		066735992BA28DE1003BC22E /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066735982BA28DE1003BC22E /* PostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		066735752BA28427003BC22E /* Homework_5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_5.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		066735782BA28427003BC22E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		066735792BA28427003BC22E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0667357B2BA28427003BC22E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		0667357C2BA28427003BC22E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,13 @@
 		066735872BA28428003BC22E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		066735892BA28428003BC22E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0667358A2BA28428003BC22E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		066735912BA28B1E003BC22E /* GetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetViewController.h; sourceTree = "<group>"; };
+		066735922BA28BCA003BC22E /* GetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetViewController.m; sourceTree = "<group>"; };
+		066735942BA28D2C003BC22E /* Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+		066735952BA28D43003BC22E /* Loader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
+		066735972BA28DAA003BC22E /* PostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		066735982BA28DE1003BC22E /* PostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		0682D25C2BA29E0C00AABEA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +70,15 @@
 		066735772BA28427003BC22E /* Homework_5 */ = {
 			isa = PBXGroup;
 			children = (
-				066735782BA28427003BC22E /* AppDelegate.h */,
 				066735792BA28427003BC22E /* AppDelegate.m */,
+				0682D25C2BA29E0C00AABEA3 /* AppDelegate.h */,
 				0667357B2BA28427003BC22E /* SceneDelegate.h */,
+				066735912BA28B1E003BC22E /* GetViewController.h */,
+				066735922BA28BCA003BC22E /* GetViewController.m */,
+				066735942BA28D2C003BC22E /* Loader.h */,
+				066735952BA28D43003BC22E /* Loader.m */,
+				066735972BA28DAA003BC22E /* PostViewController.h */,
+				066735982BA28DE1003BC22E /* PostViewController.m */,
 				0667357C2BA28427003BC22E /* SceneDelegate.m */,
 				0667357E2BA28427003BC22E /* ViewController.h */,
 				0667357F2BA28427003BC22E /* ViewController.m */,
@@ -146,10 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066735992BA28DE1003BC22E /* PostViewController.m in Sources */,
 				066735802BA28427003BC22E /* ViewController.m in Sources */,
 				0667357A2BA28427003BC22E /* AppDelegate.m in Sources */,
 				0667358B2BA28428003BC22E /* main.m in Sources */,
 				0667357D2BA28427003BC22E /* SceneDelegate.m in Sources */,
+				066735962BA28D43003BC22E /* Loader.m in Sources */,
+				066735932BA28BCA003BC22E /* GetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
